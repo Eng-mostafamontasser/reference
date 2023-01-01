@@ -1,0 +1,112 @@
+
+minikube status
+
+minikube start
+
+minikube start --container-runtime  cri-o
+
+docker container ls
+
+kubectl version
+
+...
+deploy
+...........
+kubectl create deployment --image=nginx nginx-app
+
+kubectl get deplotment 
+
+               pods
+               services
+                all
+                 replicaset
+
+>kubectl get replicaset
+
+kubectl scale depolyment nginx-app --replicas=3  >>more app
+
+
+kubectl get replicas
+............................................
+
+pod 
+.............
+
+kubectl apply -f helloworld.yml
+
+kubectl describe    pod       nginx
+                 deployment 
+kubectl exec -it nginx -- /bin/bash
+
+cat /etc/os-release ---> mare information for Distrubution  
+
+curl http://localhost
+
+*Path web
+/usr/shere/nginx/html/index.html
+
+Kubectl logs nginx
+
+
+minikube addons list
+
+minikube dashboard --url 
+
+kubectl version -o yaml
+
+minikube start --driver=docker
+
+kubectl cluster-info
+kubectl get nodes
+
+kubectl create deployment databace --image=mysql
+kubectl git all
+
+kubectl get pods -o wide  >> sh more inclode ip add
+
+minikube ssh 
+.........
+delete
+.....
+kubectl del
+
+ete pod nginx
+
+kubectl delete deployment --all
+  
+
+..................................
+ 
+**Label & Selector *
+
+kubectl get pods --show-labels
+kubectl label pod nginx owner=website >> add Label
+                        release=
+kubectl pods -l ower=website 
+             --selector 
+
+kubectl get pods -l 'release in (--,--)'  >> show more lable
+
+.......................
+
+***Deployment*** YMAL 
+
+>> kubectl api-resources   مهم
+
+kubectl expose deployment apache-web --name=web-service
+ --type=ClusterIp --port=8080 --terget-port=8080
+
+kubectl  port-forward  *name file * 8090:8080
+
+minikube service *name file * >>> open app
+
+kubectl  get deploy
+                 svc
+
+kubectl expose deployment *name file *
+
+
+
+...............................
+ minikube service nginx-service --url
+ kubectl create namespace test
