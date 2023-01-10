@@ -1,0 +1,18 @@
+Projet 1
+
+Clint >>>>>>>>>>>>> source 
+ip add :10.10.10.2
+
+mkdir test1 incloued file1
+
+#scp -r /test1 10.10.10.2:/
+     inside        outside
+
+server >>>>>>>>>>>>> distinaton 
+
+--path
+ ip add :10.10.10.3
+
+......................................................................................
+
+
