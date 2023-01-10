@@ -3,3 +3,5 @@ docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /va
 docker volume create portainer_data
 
 https://192.168.207.156:9443/
+
+https://medium.com/globant/setup-prometheus-and-grafana-monitoring-on-kubernetes-cluster-using-helm-3484efd85891
