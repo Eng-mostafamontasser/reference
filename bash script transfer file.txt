@@ -5,8 +5,8 @@ ip add :10.10.10.2
 
 mkdir test1 incloued file1
 
-#scp -r /test1 10.10.10.2:/
-     inside        outside
+#scp -r <dir-file> x@10.10.10.3:/
+     inside        outside to distaintion 
 
 server >>>>>>>>>>>>> distinaton 
 
@@ -14,5 +14,6 @@ server >>>>>>>>>>>>> distinaton
  ip add :10.10.10.3
 
 ......................................................................................
+ copy file from server - inside 
 
-
+scp x@10.10.10.3:/home/baup /home/all-backup
