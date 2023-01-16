@@ -17,3 +17,26 @@ server >>>>>>>>>>>>> distinaton
  copy file from server - inside 
 
 scp x@10.10.10.3:/home/baup /home/all-backup
+
+
+....................................
+
+
+
+ Simple shell script to download file from a FTP Server
+FTP_bash.sh
+#!/bin/bash 
+
+HOST=[HOSTNAME]  
+USER=[USERNAME]         
+PASS=[PASSWORD]           
+
+
+ftp -inv $HOST << EOF 
+user $USER $PASS 
+lcd /PATH/TO/LOCAL/DIRECTORY
+mget FILENAME* 
+bye 
+EOF  
+
+.....................
