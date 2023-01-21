@@ -40,3 +40,14 @@ bye
 EOF  
 
 .....................
+
+#crontab -l
+* * * * * bash /root/test.sh
+
+??remote
+...........
+
+*move* any dask
+
+#!/bin/bash
+mv /path/to/source /path/to/destination
