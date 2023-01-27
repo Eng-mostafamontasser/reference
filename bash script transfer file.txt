@@ -51,3 +51,14 @@ EOF
 
 #!/bin/bash
 mv /path/to/source /path/to/destination
+
+
+............................
+
+# FTP LOGIN
+HOST='192.168.207.139'
+USER='root'
+PASSWORD='12345'
+
+lftp sftp://$USER:$PASSWORD@$HOST -e 'scp  /root/data1/*  /home/mostafa/data2 bye'
+
